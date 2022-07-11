@@ -1,0 +1,34 @@
+<style>
+  form.form-example {
+    display: table;
+  }
+
+  div.form-example {
+      display: table-row;
+  }
+
+  label, input {
+      display: table-cell;
+      margin-bottom: 10px;
+  }
+
+  label {
+      padding-right: 10px;
+  }
+</style>
+
+<p>Example : /test/post</p>
+
+<form action="/test/post" method="post" class="form-example">
+  <div class="form-example">
+    <label for="name">Enter your input data: </label>
+    <input type="text" name="var1" id="name">
+  </div>
+  <div class="form-example">
+    <input type="submit" value="Subscribe!">
+  </div>
+</form>
+
+<br><br>
+<p>Parameter Data : {{data}}</p>
+<p>Please check your python console</p>
